@@ -3,14 +3,14 @@
   "version": "1.0.0",
   "private": true,
   "workspaces": [
-    "frontend",
-    "server"
+    "frontend"
   ],
   "scripts": {
-    "start": "node server/server.js",
-    "server": "node server/server.js",
+    "start": "npm --prefix server start",
+    "server": "npm --prefix server start",
     "frontend": "npm --prefix frontend run dev",
-    "build": "npm --prefix frontend run build"
+    "build": "npm --prefix frontend run build",
+    "install:server": "npm --prefix server install"
   },
   "devDependencies": {
     "puppeteer-core": "^25.12.0"
