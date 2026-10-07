@@ -1,0 +1,18 @@
+{
+  "name": "creovate-ai",
+  "version": "1.0.0",
+  "private": true,
+  "workspaces": [
+    "frontend",
+    "server"
+  ],
+  "scripts": {
+    "start": "node server/server.js",
+    "server": "node server/server.js",
+    "frontend": "npm --prefix frontend run dev",
+    "build": "npm --prefix frontend run build"
+  },
+  "devDependencies": {
+    "puppeteer-core": "^25.12.0"
+  }
+}
